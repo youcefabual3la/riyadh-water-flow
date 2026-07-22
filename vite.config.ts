@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  nitro: {
+    // Deploy target. Default = cloudflare (Lovable preview). Set NITRO_PRESET=vercel on Vercel.
+    preset: process.env.NITRO_PRESET || process.env.VERCEL ? "vercel" : undefined,
+  },
 });
