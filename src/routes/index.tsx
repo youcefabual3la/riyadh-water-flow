@@ -61,7 +61,9 @@ function Home() {
             <a href="#contact" className="hover:text-[#0369A1]">اتصل بنا</a>
           </nav>
           <div className="hidden items-center gap-2 md:flex">
-            <CallBtn label={<span className="font-digits">{PHONE}</span> as unknown as string} />
+            <a id="call-btn" href={`tel:${PHONE}`} className="call-btn inline-flex items-center gap-2 rounded-xl bg-[#0369A1] px-5 py-3 font-semibold text-white shadow-lg hover:bg-[#075985]" style={{ fontFamily: "Cairo" }}>
+              📞 اتصل الآن: <span className="font-digits">{PHONE}</span>
+            </a>
             <a href="#order" className="rounded-xl border border-[#0369A1] px-4 py-3 text-sm font-semibold text-[#0369A1] hover:bg-sky-50" style={{ fontFamily: "Cairo" }}>طلب وايت</a>
           </div>
         </div>
