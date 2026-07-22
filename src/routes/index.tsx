@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import logoAsset from "@/assets/logo.png.asset.json";
-import heroTanker from "@/assets/hero-tanker.jpg";
+import truckHero from "@/assets/truck-hero.jpg.asset.json";
 
 const PHONE = "0506079716";
 const WA = "https://wa.me/966506079716";
@@ -120,7 +120,10 @@ function Home() {
           </form>
         </div>
         <div className="mx-auto max-w-7xl px-4 pb-12">
-          <img src={heroTanker} alt="وايت مياه 6 طن بالرياض" width={1600} height={1000} className="w-full rounded-2xl object-cover shadow-xl" />
+          <div className="relative">
+            <img src={truckHero.url} alt="وايت مياه 6 طن بالرياض - صهريج مياه صالحة للشرب" width={1600} height={1000} className="w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
+            <img src={logoAsset.url} alt="شعار وايت مياه" className="absolute top-4 right-4 h-20 w-20 md:h-28 md:w-28 rounded-full bg-white/90 p-2 shadow-lg" />
+          </div>
         </div>
       </section>
 
