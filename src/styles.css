@@ -158,5 +158,4 @@
   }
   .font-digits { font-family: var(--font-digits); font-feature-settings: "tnum"; }
   html[dir="rtl"] { direction: rtl; }
-  }
 }
