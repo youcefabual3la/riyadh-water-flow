@@ -33,23 +33,6 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-function CallBtn({ className = "", label }: { className?: string; label: string }) {
-  return (
-    <a id="call-btn" className={`call-btn inline-flex items-center justify-center gap-2 rounded-xl bg-[#0369A1] px-5 py-3 font-semibold text-white shadow-lg shadow-sky-900/20 transition hover:bg-[#075985] ${className}`}
-      href={`tel:${PHONE}`} style={{ fontFamily: "Cairo, sans-serif" }}>
-      <span>📞</span><span>{label}</span>
-    </a>
-  );
-}
-function WhatsBtn({ className = "", label }: { className?: string; label: string }) {
-  return (
-    <a id="whatsapp-btn" className={`whatsapp-btn inline-flex items-center justify-center gap-2 rounded-xl bg-[#06B6D4] px-5 py-3 font-semibold text-white shadow-lg shadow-cyan-900/20 transition hover:bg-[#0891B2] ${className}`}
-      href={WA} target="_blank" rel="noopener" style={{ fontFamily: "Cairo, sans-serif" }}>
-      <span>💬</span><span>{label}</span>
-    </a>
-  );
-}
-
 function Home() {
   const [form, setForm] = useState({ name: "", phone: "", district: "", type: "مياه عذبة للشرب" });
   const submit = (e: React.FormEvent) => {
