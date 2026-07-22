@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "وايت مياه 6 طن بالرياض | توصيل مياه نقية 0506079716" },
+      { name: "description", content: "طلب وايت مياه 6 طن عذبة للشرب، المباني، الاستراحات والمسابح بالرياض. خدمة 24 ساعة." },
+      { property: "og:title", content: "وايت مياه 6 طن بالرياض | توصيل مياه نقية 0506079716" },
+      { property: "og:description", content: "طلب وايت مياه 6 طن عذبة للشرب، المباني، الاستراحات والمسابح بالرياض. خدمة 24 ساعة." },
+      { property: "og:image", content: "/og-water-tanker.jpg" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:image", content: "/og-water-tanker.jpg" },
     ],
     links: [
       {
@@ -92,6 +92,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@500;600;700&display=swap" },
     ],
   }),
   shellComponent: RootShell,
@@ -102,7 +105,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <HeadContent />
       </head>

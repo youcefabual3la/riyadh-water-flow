@@ -4,6 +4,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-heading: "Cairo", sans-serif;
+  --font-body: "Tajawal", sans-serif;
+  --font-digits: "IBM Plex Sans Arabic", "Cairo", sans-serif;
+  --color-brand: #0369A1;
+  --color-brand-2: #0284C7;
+  --color-cyan-accent: #06B6D4;
+  --color-surface: #F8FAFC;
+}
+
 /*
  * Design system definition.
  *
@@ -140,5 +150,12 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+  .font-digits { font-family: var(--font-digits); font-feature-settings: "tnum"; }
+  html[dir="rtl"] { direction: rtl; }
 }
