@@ -77,14 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "وايت مياه 6 طن بالرياض | توصيل مياه نقية 0506079716" },
-      { name: "description", content: "طلب وايت مياه 6 طن عذبة للشرب، المباني، الاستراحات والمسابح بالرياض. خدمة 24 ساعة." },
-      { property: "og:title", content: "وايت مياه 6 طن بالرياض | توصيل مياه نقية 0506079716" },
-      { property: "og:description", content: "طلب وايت مياه 6 طن عذبة للشرب، المباني، الاستراحات والمسابح بالرياض. خدمة 24 ساعة." },
+      { title: "وايت مياه 6 طن بالرياض | توصيل مياه عذبة نقية" },
+      { name: "description", content: "وايت مياه 6 طن بالرياض لتوصيل المياه العذبة للشرب والمباني والمسابح والاستراحات على مدار 24 ساعة. اتصل الآن 0506079716." },
+      { property: "og:title", content: "وايت مياه 6 طن بالرياض | توصيل مياه عذبة نقية" },
+      { property: "og:description", content: "وايت مياه 6 طن بالرياض لتوصيل المياه العذبة للشرب والمباني والمسابح والاستراحات على مدار 24 ساعة. اتصل الآن 0506079716." },
       { property: "og:image", content: "/og-water-tanker.jpg" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "/og-water-tanker.jpg" },
+      { name: "twitter:title", content: "وايت مياه 6 طن بالرياض | توصيل مياه عذبة نقية" },
+      { name: "twitter:description", content: "وايت مياه 6 طن بالرياض لتوصيل المياه العذبة للشرب والمباني والمسابح والاستراحات على مدار 24 ساعة. اتصل الآن 0506079716." },
     ],
     links: [
       {
