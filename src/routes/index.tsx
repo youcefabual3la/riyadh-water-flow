@@ -47,7 +47,7 @@ function Home() {
       <header className="sticky top-0 z-40 border-b border-sky-100 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <a href="#top" className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="وايت مياه 6 طن" className="h-12 w-12 object-contain" />
+            <img src={logoUrl} alt="وايت مياه 6 طن" className="h-12 w-12 object-contain" />
             <div className="leading-tight">
               <div className="text-lg font-bold text-[#0369A1]" style={{ fontFamily: "Cairo" }}>وايت مياه 6 طن</div>
               <div className="text-xs text-slate-500">توصيل مياه نقية بالرياض</div>
@@ -121,8 +121,8 @@ function Home() {
         </div>
         <div className="mx-auto max-w-7xl px-4 pb-12">
           <div className="relative">
-            <img src={truckHero.url} alt="وايت مياه 6 طن بالرياض - صهريج مياه صالحة للشرب" width={1600} height={1000} className="w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
-            <img src={logoAsset.url} alt="شعار وايت مياه" className="absolute top-4 right-4 h-20 w-20 md:h-28 md:w-28 rounded-full bg-white/90 p-2 shadow-lg" />
+            <img src={truckHero} alt="وايت مياه 6 طن بالرياض - صهريج مياه صالحة للشرب" width={1600} height={1000} className="w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
+            <img src={logoUrl} alt="شعار وايت مياه" className="absolute top-4 right-4 h-20 w-20 md:h-28 md:w-28 rounded-full bg-white/90 p-2 shadow-lg" />
           </div>
         </div>
       </section>
@@ -214,7 +214,7 @@ function Home() {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
-              <img src={logoAsset.url} alt="وايت مياه" className="h-12 w-12 rounded-full bg-white p-1" />
+              <img src={logoUrl} alt="وايت مياه" className="h-12 w-12 rounded-full bg-white p-1" />
               <div className="text-lg font-bold text-white" style={{fontFamily:"Cairo"}}>وايت مياه 6 طن بالرياض</div>
             </div>
             <p className="mt-3 text-sm">خدمة توصيل مياه عذبة نقية على مدار 24 ساعة لجميع أحياء الرياض.</p>
