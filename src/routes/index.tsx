@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import logoUrl from "@/assets/logo.png";
 import truckHero from "@/assets/truck-hero.jpg";
 
 const PHONE = "0506079716";
