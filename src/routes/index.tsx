@@ -77,7 +77,7 @@ function Home() {
               خدمة 24 ساعة · جميع أحياء الرياض
             </span>
             <h1 className="mt-4 text-3xl leading-tight text-slate-900 md:text-5xl">
-              وايت مياه 6 طن بالرياض — توصيل مياه <span className="text-[#0369A1]">عذبة ونقية</span> 24/7
+              وايت مياه 6 طن بالرياض — توصيل مياه <span className="text-[#0369A1]">صالحة للشرب</span> 24/7
             </h1>
             <p className="mt-4 text-lg text-slate-600">
               توصيل مياه للشرب، المنازل، المباني والإنشاءات، والمسابح بكافة أحياء الرياض بأسرع وقت.
