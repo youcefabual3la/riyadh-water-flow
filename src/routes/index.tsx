@@ -234,6 +234,18 @@ function Home() {
         </div>
         <div className="mx-auto mt-8 max-w-7xl border-t border-slate-800 px-4 pt-6 text-center text-xs text-slate-400">
           © 2026 وايت مياه 6 طن — جميع الحقوق محفوظة
+          <div className="mt-2">
+            <a
+              href="https://wa.me/966533774116"
+              target="_blank"
+              rel="noopener"
+              id="whatsapp-btn"
+              className="whatsapp-btn font-semibold text-[#06B6D4] transition-colors duration-200 hover:text-[#22D3EE]"
+              style={{ fontFamily: "Cairo" }}
+            >
+              تم التصميم بواسطة يوسف
+            </a>
+          </div>
         </div>
       </footer>
 
