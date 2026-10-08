@@ -240,10 +240,11 @@ function Home() {
               target="_blank"
               rel="noopener"
               id="whatsapp-btn"
-              className="whatsapp-btn font-semibold text-[#06B6D4] transition-colors duration-200 hover:text-[#22D3EE]"
+              className="whatsapp-btn inline-flex items-center gap-1.5 font-semibold text-[#06B6D4] transition-all duration-200 hover:text-[#22D3EE]"
               style={{ fontFamily: "Cairo" }}
             >
-              تم التصميم بواسطة يوسف
+              <span className="text-[#06B6D4] transition-colors duration-200 group-hover:text-[#22D3EE]">✦</span>
+              تصميم وتطوير وكالة طبقة
             </a>
           </div>
         </div>
