@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import Crosshair from "@/components/Crosshair";
 import truckHero from "@/assets/truck-hero.jpg";
 
 const PHONE = "0506079716";
@@ -33,6 +34,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  const heroRef = useRef<HTMLElement>(null);
   const [form, setForm] = useState({ name: "", phone: "", district: "", type: "مياه عذبة للشرب" });
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -69,7 +71,8 @@ function Home() {
       </header>
 
       {/* Hero */}
-      <section id="top" className="relative overflow-hidden">
+      <section id="top" ref={heroRef} className="relative overflow-hidden">
+        <Crosshair containerRef={heroRef} color="#0369A1" targetEffect="lock" thickness={1} opacity={0.6} smoothing={0.35} showCoordinates={false} />
         <div className="absolute inset-0 -z-10 bg-gradient-to-bl from-sky-50 via-white to-cyan-50" />
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 lg:grid-cols-2 lg:py-20">
           <div>
